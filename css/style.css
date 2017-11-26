@@ -14,7 +14,7 @@ body {
 body{
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
-    background-color: #FAFAFA;
+    background-color: #6495ED;
 }
 h1,h2,h3,h4,h5,h6{
     font-weight: 700;
@@ -118,10 +118,10 @@ section{
 * Background Colors
 ================================================*/
 .bg-texture{
-    background: transparent -webkit-radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #d81b60 80%, #c2185b 98%) repeat scroll 0% 0%;
-    background: transparent -o-radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #d81b60 80%, #c2185b 98%) repeat scroll 0% 0%;
-    background: transparent -moz-radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #d81b60 80%, #c2185b 98%) repeat scroll 0% 0%;
-    background: transparent radial-gradient(circle farthest-side at right bottom, #ec407a 5%, #e91e63 25%, #d81b60 80%, #c2185b 98%) repeat scroll 0% 0%;
+    background: transparent -webkit-radial-gradient(circle farthest-side at right bottom, #4682B4 5%, #4682B4 25%, #4682B4 80%, #4682B4 98%) repeat scroll 0% 0%;
+    background: transparent -o-radial-gradient(circle farthest-side at right bottom, #4682B4 5%, #4682B4 25%, #4682B4 80%, #4682B4 98%) repeat scroll 0% 0%;
+    background: transparent -moz-radial-gradient(circle farthest-side at right bottom, #4682B4 5%, #4682B4 25%, #4682B4 80%, #4682B4 98%) repeat scroll 0% 0%;
+    background: transparent radial-gradient(circle farthest-side at right bottom, #4682B4 5%, #4682B4 25%, #4682B4 80%, #4682B4 98%) repeat scroll 0% 0%;
 }
 .bg-texture-collage{
     background:-webkit-linear-gradient(-45deg, #ffb300 33%, transparent 0%),
@@ -165,7 +165,7 @@ section{
     color: #d81b60 !important;
 }
 .text-primary-light{
-    color: #ff80ab;
+    color: #ADD8E6;
 }
 
 /*===============================================
@@ -312,4 +312,12 @@ Pricing tables & lists
     color: #fff;
     text-shadow: none;
     background: #d81b60;
+}
+
+.form-group.required .control-label:after { 
+    color: #FFF;
+    content: "*";
+    position: absolute;
+    margin-left: 3px;
+    top:7px;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>NAP Team - Nursing Assistant Platform</title>
+        <title>NAP Team - Nurse Assisting Platform</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--Bootstrap 4-->
@@ -12,6 +12,63 @@
         <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
+    <style>
+        
+        input[type=text], select, textarea{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            resize: vertical;
+        }
+        
+        label {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        
+        input[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        .col-25 {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        
+        .col-75 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media (max-width: 600px) {
+            .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
     <body>
         <!--header-->
         <!--
@@ -55,17 +112,67 @@
                     </div>-->
                     <div class="col-md-12 col-sm-12 text-white wow fadeIn">
                     	<center>
-	                        <h2 class="pt-4">NAP Team <br/><b class="text-primary-light">Nursing Assistant Platform</b></h2>
+	                        <h1 style="font-weight: bold;" class="pt-4">NAP Team <br/><b class="text-primary-light" style="padding-top: 5%">Nurse Assisting Platform</b></h1>
 	                        <p class="mt-5">
-	                            The best gets even better. With 10 years of improvements to the code base, and dozens of major implementations, V5 brings further quality and performance advancements.
+	                            NAP is a platform ...
 	                        </p>
 
-<!-- www.123formbuilder.com script begins here -->
-<iframe allowTransparency="true" style="min-height:400px; height:100%; overflow:auto;" scrolling="no" width="100%" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="http://www.123formbuilder.com/my-contact-form-3191527.html">
-<p>Your browser does not support iframes. The contact form cannot be displayed. Please try with another browser or device</p>
-</iframe>
-<!-- www.123formbuilder.com script ends here -->
-<!--
+                        <!-- www.123formbuilder.com script begins here -->
+                        <h2 style="padding-top:10%; color: #37474F;">Contact us</h2>
+                        <div style="width: 70%; padding-top: 2%">
+                          <form action="/action_page.php">
+                            <div class="row form-group required">
+                              <div class="col-sm-2 control-label" style="text-align: right">
+                                <label for="fname">First Name</label>
+                              </div>
+                              <div class="col-sm-4">
+                                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                              </div>
+                              <div class="col-sm-2 control-label" style="text-align: right">
+                                <label for="lname">Last Name</label>
+                              </div>
+                              <div class="col-sm-4">
+                                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                              </div>
+                            </div>
+                            <div class="row" >
+                              <div class="col-sm-2" style="text-align: right;">
+                                <label for="company">Company</label>
+                              </div>
+                              <div class="col-sm-10">
+                                <input type="text" id="company" name="company" placeholder="Your company name">
+                              </div>
+                            </div>
+                            <div class="row form-group required" style="padding-top: 2%">
+                              <div class="col-sm-2 control-label" style="text-align: right">
+                                <label for="email">Email</label>
+                              </div>
+                              <div class="col-sm-10">
+                                <input type="text" id="email" name="email" placeholder="Your email">
+                              </div>
+                            </div>
+                            <div class="row form-group required">
+                              <div class="col-sm-2 control-label" style="text-align: right">
+                                <label for="subject">Subject</label>
+                              </div>
+                              <div class="col-sm-10">
+                                <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+                              </div>
+                            </div>
+                            <div style="padding-top: 2%">
+                              <input type="submit" value="Send to Nap Team" style="height: 20%" >
+                            </div>
+                          </form>
+                        </div>
+
+                        <!--
+                        <iframe allowTransparency="true" style="min-height:400px; height:100%; overflow:auto; padding-top:2%;" scrolling="no" width="100%" id="contactform123" name="contactform123" marginwidth="0" marginheight="0" frameborder="0" src="http://www.123formbuilder.com/my-contact-form-3191527.html" >
+                        <p>Your browser does not support iframes. The contact form cannot be displayed. Please try with another browser or device</p>
+                        </iframe>
+                        -->
+
+                        <!-- www.123formbuilder.com script ends here -->
+                        <!--
 	                        <p class="mt-5">
 	                            <a href="#pricing" class="btn btn-primary mr-2 mb-2 page-scroll">Buy Now</a>
 	                            <a href="#download" class="btn btn-white mb-2 page-scroll">Download iOS App</a>
@@ -412,16 +519,13 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2 col-xs-12 text-center wow fadeIn">
-                        <h1>COMPLY</h1>
+                        <h1>Follow us</h1>
                         <p class="mt-4">
-                            <a href="https://twitter.com/" target="_blank"><em class="ion-social-twitter text-twitter-alt icon-sm mr-3"></em></a>
                             <a href="https://facebook.com/" target="_blank"><em class="ion-social-github text-facebook-alt icon-sm mr-3"></em></a>
                             <a href="https://www.linkedin.com/" target="_blank"><em class="ion-social-linkedin text-linkedin-alt icon-sm mr-3"></em></a>
-                            <a href="https://plus.google.com/" target="_blank"><em class="ion-social-googleplus text-google-alt icon-sm mr-3"></em></a>
                         </p>
                         <p class="pt-2 text-muted">
-                            &copy; 2017 Comply Theme. A Bootstrap 4 multipurpose theme by 
-                            <a href="https://wireddots.com">Wired Dots</a>. Developed by <a href="https://twitter.com/attacomsian">@attacomsian</a>
+                            &copy; Copyright 2017, Nap Team, Inc.
                         </p>
                     </div>
                 </div>
